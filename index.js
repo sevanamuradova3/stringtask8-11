@@ -18,9 +18,15 @@ console.log(words);
 //11.  "            Mən Code Academydə Programing tədrisi alıram            " cümləsində neçə hərf olduğunu consolda yazdırın.
 
 
-let text3= "            Mən Code Academydə Programing tədrisi alıram            ";
-let letterCount = text3.replace(/[^a-zA-Z0-9]/g, '').length;
+var cumle= "            Mən Code Academydə Programing tədrisi alıram            ";
 
-console.log("Cümlədəki hərf sayı:", letterCount);
-//ve ya let letterCount = sentence.trim().replace(/\s+/g, ' ').split(' ').join('').length; string metodu ile
 
+var yeniCumle = "";
+
+for (var i = 0; i < cumle.length; i++) {
+    if (cumle[i] !== ' ') {
+        yeniCumle += cumle[i];
+    }
+}
+
+console.log(yeniCumle.length);
